@@ -24,12 +24,8 @@ For the numerical computation, we use Fortran, while Python manages the executio
 ## Features (特徴)
 
 - **Fortran Code (qm.f90)**  
-  This Fortran code numerically solves the 2D Schrödinger equation  
-  $$ i \frac{\partial \Psi}{\partial t} = -\frac{1}{2} \nabla^2 \Psi + V \Psi $$
-  using a 4th-order Runge–Kutta (RK4) method for time evolution.  
-  2次元シュレディンガー方程式  
-  $$ i \frac{\partial \Psi}{\partial t} = -\frac{1}{2} \nabla^2 \Psi + V \Psi $$
-  を数値的に解くFortranコードです。ルンゲ＝クッタ法(RK4)により時間発展を行います。
+  This Fortran code numerically solves the 2D Schrödinger equation using a 4th-order Runge–Kutta (RK4) method for time evolution.  
+  2次元シュレディンガー方程式を数値的に解くFortranコードです。ルンゲ＝クッタ法(RK4)により時間発展を行います。
 
 - **Python Wrapper (QMLib.py)**  
   Provides a convenient interface (via `ctypes`) to call the Fortran routines from Python.  
